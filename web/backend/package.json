@@ -1,0 +1,28 @@
+{
+  "name": "proiect",
+  "version": "1.0.0",
+  "description": "Proiect Tehnologii Web ~ Aplicație Web pentru a preveni risipa de alimente ~",
+  "main": "index.js",
+  "type": "module",
+  "configurations": [
+    {
+        "url": "http://localhost:5432"
+    }
+],
+  "scripts": {
+    "dev":"nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.26.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

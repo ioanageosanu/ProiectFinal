@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    color: #9D5353;
+    background: #321313;
+    font-weight: bold;
+}
+
+*,
+ :after,
+ :before {
+    box-sizing: border-box
+}
+
+
+.form {
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    max-width: 530px;
+    min-height: 790px;
+    position: relative;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);
+}
+
+
+
+/* .clearfix:after,
+.clearfix:before {
+    content: '';
+    display: itemle
+} */
+
+/* .clearfix:after {
+    clear: both;
+    display: block
+} */
+
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.login-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 90px 70px 50px 70px;
+    background: #00AF91;
+}
+
+.login-container .conectare,
+.login-container .inregistrare {
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .7s linear;
+}
+
+.login-container .inregistrare {
+    top: 20%;
+}
+
+.login-container .sign-in,
+.login-container .sign-up,
+.login-form .casuta .check {
+    display:none;
+}
+
+.login-container .item {
+    font-size: 22px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display:inline-block;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.login-container .sign-in:checked+.item,
+.login-container .sign-up:checked+.item {
+    color: #fff;
+    border-color: #230338;
+}
+
+
+.login-form {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    transform-style:preserve-3d;
+}
+
+.login-form .casuta {
+    margin-bottom: 15px;
+}
+
+.login-form .casuta .label,
+.login-form .casuta .input,
+.login-form .casuta .button {
+    width: 100%;
+    color: #321313;
+    display: block;
+}
+
+
+.button {
+    cursor:pointer;
+    margin-top: 50px;
+}
+
+
+.login-form .casuta .input,
+.login-form .casuta .button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: #CDFCF6;
+    font-style: italic;
+    font-weight: bold;
+    color: #007965;
+}
+
+.login-form .casuta input[data-type="password"] {
+    -webkit-text-security: circle;
+}
+
+
+.login-form .casuta .button {
+    background: #F9D923;
+}
+
+
+
+.login-container .sign-in:checked+.item+.sign-up+.item+.login-form .conectare {
+    transform: rotate(0);
+}
+
+.login-container .sign-up:checked+.item+.login-form .inregistrare {
+    transform: rotate(0);
+}
+
+.hr {
+    height: 2px;
+    margin: 60px 0 50px 0;
+    background: #219F94;
+}
+
+.footer {
+    text-align: center;
+}
